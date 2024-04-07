@@ -1,0 +1,156 @@
+// collections with everything and has multiple items
+{
+  "_id": "userID",
+  "name": "User's name",
+  "username": "User's username",
+  "password": "User's password",
+  "inventories": {
+    "id": "inventoriesID",
+    "inventoryName": "inventories name",
+    "items": [
+      {
+        "id": "itemID",
+        "name": "item's name",
+        "usesLeft": 3,
+        "store": {
+          "id": "storeID",
+          "name": "store's name",
+          "address": "store's address"
+        },
+        "reminders": {
+          "id": "reminderID",
+          "name": "reminder's name",
+          "daysTillPurchase": 4
+        },
+        "itemType": {
+          "id": "itemTypeID",
+          "consumableType": "consumableType",
+          "daysTillExpiration": 75,
+          "brandName": "name of brand"
+        }
+      },{
+        "id": "itemID",
+        "name": "item's name",
+        "usesLeft": 3,
+        "store": {
+          "id": "storeID",
+          "name": "store's name",
+          "address": "store's address"
+        },
+        "reminders": {
+          "id": "reminderID",
+          "name": "reminder's name",
+          "daysTillPurchase": 4
+        },
+        "itemType": {
+          "id": "itemTypeID",
+          "consumableType": "consumableType",
+          "daysTillExpiration": 75,
+          "brandName": "name of brand"
+        }
+      }
+    ]
+  }
+},
+// collection with a householdItemType instead of consumableType
+{
+  "_id": "userID",
+  "name": "User's name",
+  "username": "User's username",
+  "password": "User's password",
+  "inventories": {
+    "id": "inventoriesID",
+    "inventoryName": "inventories name",
+    "items": [
+      {
+        "id": "itemID",
+        "name": "item's name",
+        "usesLeft": 3,
+        "store": {
+          "id": "storeID",
+          "name": "store's name",
+          "address": "store's address"
+        },
+        "reminders": {
+          "id": "reminderID",
+          "name": "reminder's name",
+          "daysTillPurchase": 4
+        },
+        "itemType": {
+          "id": "itemTypeID",
+          "householdItemType": "householdItemType",
+          "daysTillExpiration": 75,
+          "brandName": "name of brand"
+        }
+      }
+    ]
+  }
+},
+// collection with an item without reminders
+{
+  "_id": "userID",
+  "name": "User's name",
+  "username": "User's username",
+  "password": "User's password",
+  "inventories": {
+    "id": "inventoriesID",
+    "inventoryName": "inventories name",
+    "items": {
+      "id": "itemID",
+      "name": "item's name",
+      "usesLeft": 3,
+      "store": {
+        "id": "storeID",
+        "name": "store's name",
+        "address": "store's address"
+      },
+      "itemType": {
+        "id": "itemTypeID",
+        "consumableType": "consumableType",
+        "daysTillExpiration": 75,
+        "brandName": "name of brand"
+      }
+    }
+  }
+},
+// collections with item without itemType or store
+{
+  "_id": "userID",
+  "name": "User's name",
+  "username": "User's username",
+  "password": "User's password",
+  "inventories": {
+    "id": "inventoriesID",
+    "inventoryName": "inventories name",
+    "items": {
+      "reminders": {
+        "id": "reminderID",
+        "name": "reminder's name",
+        "daysTillPurchase": 4
+      },
+    }
+  }
+},
+// collection without items with multiple inventories
+{
+  "_id": "userID",
+  "name": "User's name",
+  "username": "User's username",
+  "password": "User's password",
+  "inventories": [
+    {
+      "id": "inventoriesID",
+      "inventoryName": "inventories name"
+    },{
+      "id": "inventoriesID2",
+      "inventoryName": "inventories2 name"
+    }
+  ]
+},
+// collection without inventories 
+{
+  "_id": "userID",
+  "name": "User's name",
+  "username": "User's username",
+  "password": "User's password",
+}

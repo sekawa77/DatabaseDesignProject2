@@ -1,0 +1,9 @@
+Before running the queries please run the following commands in your terminal:
+
+npm init -y
+npm install 
+npm install --save-dev eslint eslint-config-prettier prettier
+
+
+To run the query, run the command 
+node QueryNameHere
